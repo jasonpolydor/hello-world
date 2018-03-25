@@ -9,7 +9,7 @@ import { AuthorsService } from './../authors.service';
 })
 export class AuthorsComponent implements OnInit {
   private authors: any[];
-  title: string = "List ot authors"
+  title: string = "Authors";
 
   constructor(service: AuthorsService) { 
     this.authors = service.getAuthors();

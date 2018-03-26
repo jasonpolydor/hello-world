@@ -12,6 +12,7 @@ export class CoursesComponent {
     imgUrl = "https://dummyimage.com/600x400/000/fff"; //e.g. of one way property binding
     courses;
     colSpan = 2;
+    email = "example.com";
 
     constructor(service: CoursesService){
       this.courses = service.getCourses();
@@ -31,7 +32,7 @@ export class CoursesComponent {
     //   console.log($event.target.value);
     // }
 
-    onKeyUp(email){
-      console.log(email);
+    onKeyUp(){
+      console.log(this.email);
     }
 }

@@ -16,4 +16,4 @@
 <ul>
   <li *ngFor="let course of courses">{{ course }}</li>
 </ul>
-<input #email (keyup.enter)="onKeyUp(email.value)">
+<input [(ngModel)]="email" (keyup.enter)="onKeyUp()">

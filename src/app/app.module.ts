@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { CoursesComponent } from './courses.component';
-import { CoursesService } from './courses.service';
+import { CoursesComponent } from './courses/courses.component';
+import { CoursesService } from './courses/courses.service';
 import { CourseComponent } from './course/course.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './authors.service';

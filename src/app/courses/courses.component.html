@@ -1,0 +1,19 @@
+<h2>{{ title }}</h2>
+<img [src] = "imgUrl" />
+<table>
+    <tr>
+        <td [attr.colspan]="colSpan"></td>
+    </tr>
+</table>
+<button class="btn btn-primary" 
+  [style.background]="isActive?'blue':'red'" 
+  [class.active]="isActive" 
+  [class.disabled]="isDisabled">Button
+</button>
+<div (click)="onDivClick($event)">  
+  <button (click)="onSave($event)">Save</button>
+</div>
+<ul>
+  <li *ngFor="let course of courses">{{ course }}</li>
+</ul>
+<input #email (keyup.enter)="onKeyUp(email.value)">
